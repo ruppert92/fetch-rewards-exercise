@@ -57,7 +57,7 @@ namespace UserRewards.API.Controllers
         /// Endpoint to get payer point balances
         /// </summary>
         /// <returns>200 with list of payer balances</returns>
-        [HttpPost("payer-balances")]
+        [HttpGet("payer-balances")]
         [ProducesResponseType(typeof(List<PayerBalance>), 200)]
         public async Task<IActionResult> GetPayerBalances(CancellationToken cancellationToken = default)
         {
